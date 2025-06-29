@@ -1,1 +1,2 @@
 # CSV_Reader
+This repository houses a simple csv reader coded in BASH. It utilizes associative arrays (as BASH does not support multi-dimensional arrays). The *.sh contains functions that may be useful in parsing *.csv files within a shell script.
