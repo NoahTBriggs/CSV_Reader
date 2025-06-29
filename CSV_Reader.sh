@@ -93,6 +93,7 @@ function Write_To_Array() {
   fi
 }
 
+# Prints out all values in the same form as the original CSV from CSV_ARRAY
 function Print() {
   # Variable to hold the line to be built before printing
   PRINT_LINE=""
@@ -113,7 +114,6 @@ function Print() {
         else
           PRINT_LINE+="$(Read_From_Array $i $j)"
         fi
-
       done
       
       # Print the reconstructed line
@@ -126,6 +126,7 @@ function Print() {
   fi
 }
 
+# Redirects Print function output to file
 function Save_To_File() {
   # Redirects Print output to file
   Print > "$1"
